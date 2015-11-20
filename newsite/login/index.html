@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Compendium - Login/Registration</title>
+    <meta name="description" content="My Compendium Page">
+    <meta name="author" content="Infinitry">
+    <link rel="stylesheet" type="text/css" href="{stylesheets}/reset.css" />        
+    <link rel="stylesheet" type="text/css" href="{stylesheets}/global.css" />     
+    <link rel="stylesheet" type="text/css" href="{stylesheets}/login.css" />
+    <script src="{javascript}/jquery.js"></script>
+    <script src="{javascript}/modernizr.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script> 
+    <script src="{javascript}/login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <section class="content">
+            <section class="tabs">
+                <a href="#" class="tab sign_in active_tab"><span>Sign In</span></a>
+                <a href="#" class="tab sign_up"><span>Sign Up</span></a>
+            </section>
+            <section class="box">
+                <section class="login box_option">
+                    {exp:authenticate:login_form id="sign_in_form" action="/login" return="director/index"}
+                        <section class="username">
+                            <div class="text">
+                                <span>Username</span>
+                                <a href="#">Forgot your username?</a>
+                            </div>
+                            <span class="serror">{if total_global_errors > 0}{global_errors}{error}{/global_errors}{/if}{if total_field_errors > 0}{field_errors}{error}{/field_errors}{/if}</span>
+                            <input type="text" spellcheck="false" name="username">
+                        </section>
+                        <section class="password">
+                            <div class="text">
+                                <span>Password</span>
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                            <span class="serror"></span>
+                            <input type="password" name="password" >
+                        </section>
+                        <section class="submit">
+                            <a class="login_submit" href="#"><span>Login!</span></a>
+                        </section>
+                    {/exp:authenticate:login_form}
+                </section>
+                <section class="register_1 box_option">
+                    <header>
+                        <span>Do we know you?</span>
+                        <div class="progress_1"></div>
+                    </header>
+                        <section class="registration_code">
+                            <div class="text">
+                                <span>Registration Code</span>
+                                <a href="#">Where's my code?</a>
+                            </div>
+                            <span class="serror"></span>
+                            <input type="text" />
+                        </section>
+                        <span class="code_box_error serror"></span>
+                        <section class="code_confirm">
+                            <div class="code_box">
+                                <div class="unchecker"></div>
+                                <div class="checkmark"></div>
+                            </div>
+                            <span class="my_code">This is <span class="important">my</span> registration code.</span>
+                        </section>
+                        <section class="submit">
+                            <a class="registration_1" href="#"><span>Next!</span></a>
+                        </section>
+                </section>
+                <section class="register_2 box_option">
+                    <header>
+                        <span>Great! Tell us a little more...</span>
+                        <div class="progress_2"></div>
+                    </header>
+                    <form>
+                        <section class="pick_username">
+                            <div class="text">
+                                <span>Pick a Username</span>
+                            </div>
+                            <span class="serror"></span>
+                            <input type="text" />
+                        </section>
+                        <span class="serror"></span>
+                        <section class="pick_password_1">
+                            <div class="text">
+                                <span>Pick a Password...</span>
+                            </div>
+                            <input type="password" />
+                        </section>
+                        <section class="pick_password_2">
+                            <div class="text">
+                                <span>...Now Retype It</span>
+                            </div>
+                            <input type="password" />
+                        </section>
+                        <section class="submit">
+                            <a class="registration_2" href="#"><span>Finish!</span></a>
+                        </section>
+                    </form>
+                </section>
+
+            </section>
+        </section>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

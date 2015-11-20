@@ -1,0 +1,236 @@
+h2 {
+    margin-bottom: 10px !important;
+}
+
+section.student {
+    margin-bottom: 9px;
+}
+
+section.student a.header {
+    display: block;
+    width: 684px;
+    height: 29px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    position: relative;
+    text-decoration: none;
+}
+
+a.header section.name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: -1px;
+    margin-left: -1px;
+    min-width: 142px;
+    height: 29px;
+    background: #66cc64;
+    font-size: 14px;
+    color: #fff;
+    font-style: italic;
+    border: 1px solid #339933;
+    border-right: 0px none;
+    padding-right: 10px;
+}
+
+section.name span {
+    line-height: 29px;
+    vertical-align: middle;
+    margin-left: 28px;
+}
+
+section.name:after {
+    height: 18px;
+    width: 11px;
+    position: absolute;
+    content: "";
+    display: block;
+    top: -1px;
+    right: -11px;
+    border-top: 1px solid #393;
+    border-right: 1px solid #393;
+    background: #66CC64;
+}
+
+section.name:before {
+    height: 12px;
+    width: 12px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -11px;
+    bottom: -1px;
+    background: url(../images/site_images/admin/mission_triangle.png);
+}
+
+a.header section.toggler {
+    width: 108px;
+    height: 29px;
+    float: right;
+}
+
+div.circletri {
+    background: url(../images/site_images/admin/mission_circletri.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-top: 7px;
+    float: left;
+}
+
+section.toggler span {
+    font-size: 12px;
+    color: #666;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-left: 9px;
+}
+
+section.active_student div.circletri {
+    background: url(../images/site_images/admin/mission_circletri.png) no-repeat -15px -15px !important;
+}
+
+section.active_student span {
+    color: #009900 !important;
+}
+
+section.edit_student {
+    display: none;
+    width: 662px;
+    padding: 11px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: 0px none;
+}
+
+section.open {
+    display: block !important;
+}
+
+section.student_row {
+    min-height: 42px;
+    border-bottom: 1px dashed #ccc;
+}
+
+section.label {
+    height: 100%;
+    color: #666;
+    font-weight: bold;
+    font-size: 12px;
+    float: left;
+    padding-top: 10px;
+}
+
+section.input_hold {
+    overflow: auto;
+    position: relative;
+    top: 1px;
+}
+
+section.student_row input, select {
+    width: 240px;
+    height: 30px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    outline: 0px none;
+    margin-top: 10px;
+    padding: 0px;
+    padding-left: 11px;
+    font-size: 12px;
+    color: #666;
+    float: right;
+    clear: right;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+select {
+    height: 100% !important;
+    padding-left: 0px !important;
+    margin-left: 11px !important;
+}
+
+section.student_row input:focus, textarea:focus {
+    border-color: #25a8d3;
+}
+
+textarea {
+    height: 67px;
+    width: 229px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    outline: 0px none;
+    padding: 11px;
+    margin-top: 10px;
+    resize: none;
+    font-size: 12px;
+    color: #666;
+    float: right;
+}
+
+#student_class_assignments {
+    display: none;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
+div.code_box {
+    width: 21px;
+    height: 21px;
+    float: left;
+    position: relative;
+}
+
+div.unchecker {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 1px solid #999;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+section.input_hold div.checkmark {
+    width: 21px;
+    height: 21px;
+    background: url(../images/site_images/login/checkmark.png);
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    z-index: 2;
+    display: none;
+}
+
+div.checked {
+    display: block !important;
+}
+
+span.my_code {
+    margin-left: 11px;
+    line-height: 21px;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #666;
+}
+
+.safecracker_file_thumb {
+    float: right !important;
+    width: 242px !important;
+    overflow: hidden !important;
+    border: 1px solid #D1D1D1 !important;
+    border-radius: 2px !important;
+}
+
+.safecracker_file_remove_button {
+    position: absolute;
+    top: 0px !important;
+    left: 0px !important;
+}
+
+.safecracker_file_undo_button {
+    float: right !important;
+    position: relative !important;
+    top: 5px !important;
+    padding-right: 30px !important;
+}

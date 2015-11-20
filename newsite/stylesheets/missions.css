@@ -1,0 +1,428 @@
+.date_selector_container {
+    display: none;
+}
+
+section.mission {
+    margin-bottom: 9px;
+}
+
+section.mission a.header {
+    display: block;
+    width: 684px;
+    height: 29px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    position: relative;
+    text-decoration: none;
+}
+
+a.header section.name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: -1px;
+    margin-left: -1px;
+    min-width: 152px;
+    padding-right: 10px;
+    height: 29px;
+    background: #66cc64;
+    font-size: 14px;
+    color: #fff;
+    font-style: italic;
+    border: 1px solid #339933;
+    border-right: 0px none;
+}
+
+section.name span {
+    line-height: 29px;
+    vertical-align: middle;
+    margin-left: 28px;
+}
+
+section.name:after {
+    height: 18px;
+    width: 11px;
+    position: absolute;
+    content: "";
+    display: block;
+    top: -1px;
+    right: -11px;
+    border-top: 1px solid #393;
+    border-right: 1px solid #393;
+    background: #66CC64;
+}
+
+section.name:before {
+    height: 12px;
+    width: 12px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -11px;
+    bottom: -1px;
+    background: url(../images/site_images/admin/mission_triangle.png);
+}
+
+a.header section.toggler {
+    width: 103px;
+    height: 29px;
+    float: right;
+}
+
+div.circletri {
+    background: url(../images/site_images/admin/mission_circletri.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-top: 7px;
+    float: left;
+}
+
+section.toggler span {
+    font-size: 12px;
+    color: #666;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-left: 9px;
+}
+
+section.active_mission div.circletri {
+    background: url(../images/site_images/admin/mission_circletri.png) no-repeat -15px -15px !important;
+}
+
+section.active_mission span {
+    color: #009900 !important;
+}
+
+section.edit_mission {
+    display: none;
+    width: 662px;
+    padding: 11px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: 0px none;
+}
+
+section.open {
+    display: block !important;
+}
+
+section.mission_row {
+    height: 42px;
+}
+
+section.label {
+    width: 409px;
+    height: 41px;
+    line-height: 56px;
+    vertical-align: baseline;
+    color: #666;
+    font-weight: bold;
+    font-size: 12px;
+    border-bottom: 1px dashed #ccc;
+    float: left;
+}
+
+section.mission_row input {
+    width: 240px;
+    height: 30px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    outline: 0px none;
+    margin-top: 10px;
+    padding: 0px;
+    padding-left: 11px;
+    font-size: 12px;
+    color: #666;
+}
+
+section.mission_row input:focus {
+    border-color: #25a8d3;
+}
+
+div.selections_fix {
+    position: relative;
+    width: 251px;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+}
+
+a.input_dropdown {
+    display: block;
+    width: 251px;
+    height: 30px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    background: url(../images/site_images/admin/mission_drop.png) no-repeat 231px 12px;
+    text-decoration: none;
+}
+
+a.input_dropdown span {
+    font-size: 12px;
+    color: #666;
+    margin-left: 11px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+a.active_selector {
+    border-color: #25a8d3;
+}
+
+section.category_selections {
+    border: 1px solid #8e8e8e;
+    background: #fff;
+    padding-bottom: 10px;
+    width: 170px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    -moz-box-shadow: 0px 1px 4px #888;
+    -webkit-box-shadow: 0px 1px 4px #888;
+    box-shadow: 0px 1px 4px #888;
+    display: none;
+}
+
+section.category_selections a {
+    display: block;
+    width: 110px;
+    padding: 0px 30px;
+    height: 37px;
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+
+section.category_selections a:hover {
+    background: #1470a3;
+    color: #fff;
+}
+
+section.category_selections a span {
+    line-height: 37px;
+    vertical-align: middle;
+}
+
+
+section.mission_description {
+    height: 101px !important;
+}
+
+section.mission_description section.label {
+    height: 100px !important;
+}
+
+section.mission_description textarea {
+    height: 67px;
+    width: 229px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    outline: 0px none;
+    padding: 11px;
+    margin-top: 10px;
+    resize: none;
+    font-size: 12px;
+    color: #666;
+}
+
+section.mission_description textarea:focus {
+    border-color: #25a8d3;
+}
+
+section.reward_points {
+    width: 662px;
+    height: 69px;
+}
+
+section.reward_points span.label {
+    float: left;
+    color: #666;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 69px;
+    vertical-align: middle;
+}
+
+div.slider {
+    width: 419px;
+    height: 6px;
+    background: #939393;
+    border-radius: 0px;
+    border: 0px none;
+    margin-top: 32px;
+    margin-left: 100px;
+    float: left;
+}
+
+div.slider div.ui-slider-range {
+    border: 0px none;
+    background: #009900;
+    height: 100%;
+}
+
+div.slider a.ui-slider-handle {
+    display: block;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    border: 0px none;
+    background: #e4e4e4;
+    position: relative;
+    outline: 0px none;
+    cursor: default;
+    margin-left: -9px;
+    margin-top: -12px;
+    box-shadow: 2px 2px 7px -1px #888;
+}
+
+span.plus, span.value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    line-height: 69px;
+    vertical-align: middle;
+    float: right;
+}
+
+.fixed_header {
+   width: 662px !important;
+}
+
+.assign, .status, .complete {
+    width: 70px;
+}
+
+input {
+    padding: 1px;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+table td.unchecked {
+    background: url(../images/site_images/admin/table_x.png) no-repeat center center;
+}
+
+table td.checked {
+    background: url(../images/site_images/admin/table_checkmark.png) no-repeat center center;
+}
+
+table td.locked {
+    background: url(../images/site_images/admin/locked.png) no-repeat center center;
+}
+
+table td.unlocked {
+    background: url(../images/site_images/admin/unlocked.png) no-repeat center center;
+}
+
+table td.disabled {
+    background: url(../images/site_images/admin/disabled.png) no-repeat center center;
+}
+
+table td.notes div.textarea_container {
+    width: 329px;
+    position: absolute;
+    z-index: 2;
+    margin-top: -13px;
+    margin-left: -200px;
+    border: 1px solid #999;
+    -moz-box-shadow: 0px 0px 6px #888;
+    -webkit-box-shadow: 0px 0px 6px #888;
+    box-shadow: 0px 0px 6px #888;
+    display: none;
+    background: #F3F3F3;
+    padding-bottom: 37px;
+}
+
+table td.notes div.textarea_container div.ilp {
+    width: 309px;    
+    background: white;
+    padding: 17px 0px 25px 20px;
+    position: relative;
+}
+
+div.textarea_container div.buttons {
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+}
+
+table td.notes span.no_notes {
+    visibility: hidden;
+}
+
+table td.notes span.has_notes {
+    visibility: visible;
+    margin-left: 15px;
+}
+
+section.option_buttons {
+    display: none;
+}
+
+section.mission_unlock {
+    display: none;
+}
+
+span.description {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 12px;
+    display: block;
+}
+
+.add_step {
+    color: #069;
+    text-decoration: none;
+    font-size: 11px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.add_step:hover {
+    color: #005884;
+}
+
+.step_num {
+    width: 10px;
+    display: inline;
+}
+
+.step_desc {
+    width: 160px;
+    margin-right: 19px;
+    display: inline;
+}
+
+.step_complete {
+    display: inline;
+    margin-right: 6px;
+}
+
+.closer {
+    color: #069;
+    text-decoration: none;
+    font-size: 11px;
+    position: relative;
+    bottom: 2px;
+}
+
+.ilp_title {
+    display: inline;
+    position: absolute;
+    left: 10px;
+    bottom: 1px;
+    width: 187px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.ilp_save {
+    display: inline;
+    position: absolute;
+    left: 120px;
+    bottom: 2px;
+    width: 83px;
+    border: 0px;
+    height: 16px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Compendium Administration</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/reset.css" />		
+		<link rel="stylesheet" type="text/css" href="../stylesheets/admin.css" />
+		<script src="../js/jquery.js"></script>
+		<script src="../js/ui.jquery.js"></script>
+		<script>
+		$(function() {
+			$( ".pn_item_active .progress_navigation_selections" ).show();
+
+			$( ".pn_item a" ).click( function () {
+				var $this = $( this );
+				$( ".pn_item_active" ).removeClass( "pn_item_active" ).find( ".progress_navigation_selections" ).slideUp( 200 , function () {
+					$this.parent().find( ".progress_navigation_selections" ).slideDown( 400 );
+				} );
+				$this.parent().addClass( "pn_item_active" );
+				return false;
+			} );
+
+			$( ".progress_navigation_selections a" ).unbind( "click" ).click( function () {
+				var $this = $( this );
+				$( ".pn_selections_active" ).removeClass( "pn_selections_active" );
+				$this.addClass(" pn_selections_active" );
+				return false;
+			} );
+		});
+		</script>
+		</head>
+	<body>
+		<div id="navigation_bar">
+				<a href="#" id="logo">Compendium</a>
+				<div class="navigation" id="first_navigation">
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_school_data">School Data</a>
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_class_data">Class Data</a>
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_individual_data">Individual Data</a>
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_connect">Connect</a>
+					<div class="navigation_border">|</div>
+				</div>
+				<div class="navigation" id="second_navigation">
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_notifications">notifications</a>
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_profile">my profile</a>
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_logout">sign out</a>
+					<div class="navigation_border">|</div>
+
+				</div>
+		</div>
+		<div id="left_navigation">
+			<div class="pn_item pn_item_active" id="academic_progress">
+				<a class="progress_navigation_text" href="#" id="academic_progress_text">Academic <div class="dbutton"><div class="triangle"></div></div></a>
+				<div class="progress_navigation_selections" id="academic_progress_selections">
+					<a class="pn_selections_active" href="#" id="ap_selections_reading"><span>Reading</span></a>
+					<a href="#" id="ap_selections_math"><span>Math</span></a>
+					<a href="#" id="ap_selections_science"><span>Science</span></a>
+				</div>
+			</div>
+			<div class="pn_item" id="interpersonal_skills">
+				<a class="progress_navigation_text" href="#" id="interpersonal_skills_text">Interpersonal <div class="dbutton"><div class="triangle"></div></div></a>
+				<div class="progress_navigation_selections" id="interpersonal_skills_selections">
+					<a href="#" id="ips_selections_communication"><span>Communication</span></a>
+					<a href="#" id="ips_selections_teamwork"><span>Teamwork</span></a>
+					<a href="#" id="ips_selections_planning"><span>Planning</span></a>						
+				</div>
+			</div>
+			<div class="pn_item" id="personal_skills">
+				<a class="progress_navigation_text" href="#" id="personal_skills_text">Personal <div class="dbutton"><div class="triangle"></div></div></a>
+				<div class="progress_navigation_selections" id="personal_skills_selections">
+					<a href="#" id="ps_selections_leadership"><span>Leadership</span></a>
+					<a href="#" id="ps_selections_critical"><span>Critical Thinking</span></a>
+					<a href="#" id="ps_selections_creativity"><span>Creativity</span></a>						
+				</div>
+			</div>
+			<div class="pn_item" id="paychecks">
+				<a class="progress_navigation_text" href="#" id="paychecks_text">Paychecks</a>
+				<div class="progress_navigation_selections"></div>
+			</div>
+			<div class="pn_item" id="attendance">
+				<a class="progress_navigation_text" href="#" id="attendance_text">Attendance</a>
+				<div class="progress_navigation_selections"></div>
+			</div>
+		</div>
+		<div id="data_entry"></div>
+		<div id="footer"></div>
+	</body>
+</html>

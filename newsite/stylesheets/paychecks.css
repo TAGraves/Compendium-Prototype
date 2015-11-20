@@ -1,0 +1,7 @@
+table td.unchecked {
+    background: url(../images/site_images/admin/table_x.png) no-repeat center center;
+}
+
+table td.checked, table td.reach_selected {
+    background: url(../images/site_images/admin/table_checkmark.png) no-repeat center center;
+}

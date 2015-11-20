@@ -1,0 +1,497 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: url(../images/totalbackground.png) repeat-x #F2F2F2;
+}
+
+.wrapper { /* all elements have a background the width of the page, but are only inside a 960px wrap. */
+	width: 960px;
+	padding: 0px 120px;
+	margin: 0 auto;
+}
+
+#logo, #navigation a, #navigation div, #chalkboard_level_banner, #chalkboard_level_text, #chalkboard_level_display, #chalkboard_meter, #track_progress, .pn_divider, .progress_navigation_text, #detail_display_navigation a, .dp_category_text, #ol_meter_number, #ol_details_button, .lb_meter, .lb_meter span, .lb_details a { /* all a elements that need to be block; i.e. buttons */
+	display: block;
+	text-indent: -9999px;
+}
+
+#navigation_bar {
+	background: url(../images/navigation_bar_bg.png);
+	width: 100%;
+	height: 55px;
+}
+
+#logo {
+	width: 166px;
+	height: 29px;
+	background: url(../images/logo.png) 0px 12px no-repeat;
+	margin-left: 30px;
+	padding: 12px 0px;
+	float: left;
+}
+
+#navigation {
+	float: right;
+	margin-right: 13px;
+}
+
+#navigation a, #navigation div {
+	float: left;
+}
+
+.navigation_border {
+	width: 3px;
+	height: 55px;
+	background: url(../images/navigation_border_bg.png);
+}
+
+#navigation a {
+	width: 55px;
+	height: 55px;
+}
+
+#navigation a:hover {
+	background-position: 0px -55px;
+}
+
+#navigation_help {
+	background: url(../images/navigation_help.png);
+}
+
+#navigation_profile {
+	background: url(../images/navigation_profile.png);
+}
+
+#navigation_logout {
+	background: url(../images/navigation_logout.png);
+}
+
+#billboard {
+	background: url(../images/billboard_background.png);
+	height: 340px;
+}
+
+
+#billboard .wrapper {
+	height: 340px;
+	background: url(../images/billy.jpg);
+	position: relative;
+}
+
+#chalkboard_level_text {
+	width: 172px;
+	height: 101px;
+	background: url(../images/billy_at_level.png);
+	float: left;
+	margin: 30px 0px 0px 329px;
+}
+
+#chalkboard_level_banner {
+	height: 144px;
+	width: 616px;
+	background: url(../images/chalkboard_level_banner.png);
+	margin: 0 auto;
+	position: relative;
+	top: -25px;
+	clear: left;
+}
+
+#chalkboard_level_display {
+	width: 90px;
+	height: 136px;
+	background: url(../images/chalkboard_level_5.png) no-repeat;	
+	position: relative;
+	float: left;
+	margin: 15px 0px 0px 15px;
+	visibility: hidden;
+}
+
+#chalkboard_meter {
+	width: 401px;
+	height: 47px;
+	background: url(../images/chalkboard_meter.png);
+	margin: 0 auto;
+	position: relative;
+	top: -61px;
+}
+
+#chalkboard_meter_number {
+	display: block;
+	width: 0px;
+	height: 47px;
+	background: url(../images/chalkboard_meter_progress.png);
+	margin-left: 6px;
+	visibility: hidden;
+}
+
+#detail_display {
+	background: #f2f2f2;
+	border-top: 3px solid #fff;
+}
+
+#detail_display_navigation {
+	position: relative;
+	top: -27px;
+	left: 30px;
+}
+
+#detail_display_navigation a {
+	width: 201px;
+	height: 40px;
+	float: left;
+	position: relative;
+}
+
+#dd_navigation_development {
+	background: url(../images/development_tab.png);
+	z-index: 1000;
+}
+
+#dd_navigation_achievements {
+	background: url(../images/achievements_tab.png);	
+	right: 15px;
+	z-index: 999;
+}
+
+#detail_display_navigation a:hover {
+	background-position: 0px -40px;
+}
+
+.dd_navigation_active {
+	background-position: 0px -80px !important;
+	z-index: 1001 !important;
+}
+
+.dd_navigation_active:hover {
+	background-position: 0px -80px !important;
+	z-index: 1001 !important;	
+}
+
+#dd_navigation_goals {
+	background: url(../images/goals_tab.png);	
+	right: 30px;
+	z-index: 998;
+}
+
+#dd_navigation_connect {
+	background: url(../images/connect_tab.png);	
+	right: 45px;
+	z-index: 997;
+}
+
+#detail_display .wrapper {
+	background: url(../images/crazybg.jpg) no-repeat 120px 0px;
+	position: relative;
+}
+
+#detail_display_wrap {
+	width: 939px;
+	position: relative;
+	margin-left: 20px;
+	overflow: hidden;
+	clear: left;
+	padding-bottom: 10px;
+}
+
+#progress_navigation {
+	position: relative;
+	width: 239px;
+	padding-left: 23px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	float: left;
+	z-index: 9999;
+	background: url(../images/pn_selections_border.png) no-repeat 250px 19px;
+}
+
+#track_progress {
+	width: 215px;
+	height: 72px;
+	background: url(../images/track_progress.png) no-repeat;
+	padding-bottom: 7px;
+}
+
+.pn_divider {
+	width: 220px;
+	margin-left: 10px;
+	height: 4px;
+	background: url(../images/pn_divider.png);
+}
+
+.progress_navigation_text {
+	margin: 7px 0px;
+	width: 212px;
+}
+
+#academic_progress_text {
+	background: url(../images/academic_progress.png) no-repeat;
+	height: 50px;
+}
+
+.pn_item {
+	position: relative;
+}
+
+.pn_item_active #academic_progress_text, #academic_progress_text:hover {
+	background: url(../images/academic_progress.png) 0px -50px no-repeat !important;
+}
+
+.progress_navigation_selections {
+	display: none;
+}
+
+#interpersonal_skills_text {
+	background: url(../images/interpersonal_skills.png) no-repeat;
+	height: 41px;
+}
+
+.pn_item_active #interpersonal_skills_text, #interpersonal_skills_text:hover {
+	background: url(../images/interpersonal_skills.png) 0px -41px no-repeat !important;
+}
+
+#personal_skills_text {
+	background: url(../images/personal_skills.png) no-repeat;
+	height: 47px;
+}
+
+.pn_item_active #personal_skills_text, #personal_skills_text:hover {
+	background: url(../images/personal_skills.png) 0px -47px no-repeat !important;
+}
+
+#paychecks_text {
+	background: url(../images/paychecks.png) no-repeat;
+	height: 40px;
+}
+
+.pn_item_active #paychecks_text, #paychecks_text:hover {
+	background: url(../images/paychecks.png) 0px -40px no-repeat !important;
+}
+
+#attendance_text {
+	background: url(../images/attendance.png) no-repeat;
+	height: 44px;
+}
+
+.pn_item_active #attendance_text, #attendance_text:hover {
+	background: url(../images/attendance.png) 0px -44px no-repeat !important;
+}
+
+.progress_navigation_selections a {
+	display: block;
+	height: 22px;
+	padding-left: 41px;	
+	padding-top: 11px;
+	text-decoration: none;
+	color: #999999;
+	font-size: 20px;
+	background: url(../images/progress_navigation_box.png) 0px 11px no-repeat;
+	position: relative;
+	top: -10px;
+	margin-left: 20px;
+}
+
+.pn_selections_active, .progress_navigation_selections a:hover {
+	color: #669966 !important;
+}
+
+.pn_selections_active {
+	background: url(../images/progress_navigation_box.png) 0px -22px no-repeat !important;	
+}
+
+#detailed_progress {
+	width: 674px;
+	float: right;
+}
+
+#dp_category_reading {
+	background: url(../images/reading_header.png);
+	width: 663px;
+	height: 123px;
+	position: relative;
+	z-index: 1;
+}
+
+#dp_category_math {
+	background: url(../images/math_header.png);
+	width: 663px;
+	height: 123px;
+	position: relative;
+	z-index: 1;
+}
+
+#overall_level {
+	width: 580px;
+	padding: 60px 0px 0px 80px;
+	height: 278px;
+	background: url(../images/overall_level_bg.png) 0px 0px no-repeat;
+	position: relative;
+	z-index: 2;
+	margin-top: -58px;
+}
+
+#overall_level_text {
+	color: #fff;
+	font-size: 32px;
+}
+
+#overall_level_number {
+	font-size: 54px;
+	color: #fff;
+	margin: 11px 22px;
+	float: left;
+}
+
+#overall_level_meter {
+	width: 438px;
+	height: 44px;
+	background: url(../images/overall_level_meter.png);
+	float: left;
+	margin-top: 22px;
+	margin-left: 10px;
+	text-indent: -9999px;
+}
+
+#ol_meter_number {
+	width: 177px;
+	height: 40px;
+	margin-top: 1px;
+	margin-left: 2px;
+	background: url(../images/ol_meter_progress.png);
+	visibility: hidden;
+}
+
+#overall_level_subtext {
+	clear: left;
+	font-size: 18px;
+	color: #fff;
+	position: relative;
+	top: 25px;
+}
+
+.level_number {
+	color: #33cc33;
+	font-weight: bold;
+}
+
+.ols {
+	padding-left: 63px;
+	margin-top: 15px;
+	background: url(../images/level_box_arrow.png) 23px 3px no-repeat;
+}
+
+#ol_details_button {
+	width: 100px;
+	height: 100px;
+	background: url(../images/ol_details.png);
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+
+.lb_category {
+	clear: left;
+}
+
+.data_column {
+	float: left;
+	width: 424px;
+	padding-right: 20px;
+	position: relative;
+	z-index: 4;
+}
+
+.lb_details {
+	width: 200px;
+	float: right;
+	background: url(../images/lb_side_border.jpg) no-repeat;
+}
+
+.lb_details a {
+	height: 78px;
+	width: 78px;
+	margin-left: 45px;
+	background: url(../images/lb_details.png) no-repeat;
+}
+
+a.low_level {
+	background: url(../images/lb_details_low.png) no-repeat !important;
+}
+
+.lb_text {
+	font-size: 26px;
+	float: left;
+}
+
+.lb_ltext {
+	font-size: 25px;
+	color: #666666;
+	float: right;
+}
+
+.lb_display {
+	clear: both;
+	padding-top: 5px;
+}
+
+.lb_display div {
+	float: left;
+}
+
+.lb_percent {
+	font-size: 28px;
+	color: #339933;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.low_level .lb_percent {
+	color: #cc3333 !important;
+}
+
+.lb_meter {
+	width: 333px;
+	height: 38px;
+	background: url(../images/lb_meter.png);
+	margin-left: 5px;
+}
+
+.lb_meter span {
+	width: 203px;
+	height: 33px;
+	position: relative;
+	top: 2px;
+	left: -1px;
+	background: url(../images/lb_progress.png);	
+	visibility: hidden;
+}
+
+.low_level .lb_meter span { 
+	width: 97px;
+	background: url(../images/lb_progress_low.png) !important;	
+}
+
+.lb_number {
+	float: right !important;
+	font-size: 56px;
+	color: #339933;
+	position: relative;
+	top: -10px;
+	left: 10px;
+}
+
+.low_level .lb_number {
+	color: #cc3333;
+}
+
+.lb_category {
+	background: url(../images/lb_bottom_border.png) no-repeat 20px bottom ;
+	overflow: hidden;
+	padding-top: 5px;
+	padding-left: 30px;
+	position: relative;
+	z-index: 1;
+}
+
+#footer {
+	display: none;
+	height: 50px;
+}

@@ -1,0 +1,192 @@
+body, input {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+}
+
+header.masthead,  nav.disciplines {
+    background: #005884; 
+    border-bottom: 3px solid #65cc63;
+}
+
+header.masthead {
+    width: 100%;
+    min-height: 55px
+}
+
+.a_image {
+    display: block;
+    text-decoration: none;
+}
+
+a.logo {
+    text-indent: -9999px;
+    width: 184px;
+    height: 30px;
+    background: url(../images/site_images/logo.png) no-repeat;
+    margin-left: 23px;
+    position: relative;
+    top: 12px;
+}
+
+section.main_pane {
+    width: 100%;
+    height: 100%;
+    height: -moz-calc(100% - 55px);  /* Gecko 2.0 (Firefox 4) and above, experimental, will be dropped */
+    height: -webkit-calc(100% - 55px);  /* WebKit 536.3 (Chrome 19) and above, experimental */
+    height: calc(100% - 55px);  /* final CSS3 compliant implementation; IE 9 and above */
+    background: #fff; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: -moz-linear-gradient(top,  #ededed 0%, #ffffff 35px, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(35px,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ededed 0%,#ffffff 35px,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ededed 0%,#ffffff 35px,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ededed 0%,#ffffff 35px,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ededed 0%,#ffffff 35ox,#ffffff 100%); /* W3C */
+}
+
+nav.disciplines {
+    width: 100%;
+    height: 55px;
+    text-indent: -9999px;
+}
+
+a.x_button {
+    display: block;
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid #efefef; 
+    background: #000; 
+    position: relative;
+    border-radius: 100%;
+    -moz-box-shadow: -2px 2px 9px #888;
+    -webkit-box-shadow: -2px 2px 9px #888;
+    box-shadow: -2px 2px 9px #888;
+    z-index: 20;
+}
+
+.ui-tooltip-title a.x_button {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+a.x_button div.cross {
+    background: #efefef; 
+    position: absolute;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+a.x_button div.horizontal {
+    top: 7.5px; 
+    left: 2px;
+    width: 12px; 
+    height: 2px; 
+}
+
+a.x_button div.vertical {
+    top: 2px; 
+    left: 7.5px;
+    height: 12px; 
+    width: 2px; 
+}
+
+/*div.qtip-tip {
+    bottom: 1px !important;
+    left: 35% !important;
+    z-index: 5 !important;
+}*/
+
+ .ui-tooltip-content {
+    padding: 9px 5px 9px 11px;
+    background: #fff;
+    color: #666;
+    text-align: left;
+    border-width: 1px;
+    border-color: #ccc;
+    font-size: 12px;
+}
+
+ .ui-tooltip-tip {
+    background-color: #fff;
+}
+
+a.report_problem {
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    float: left;
+    z-index: 9999;
+    color: #666;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    border-bottom: 0px none;
+    text-align: center;
+}
+
+a.report_problem:hover {
+    border-color: #666;
+}
+
+a.report_problem span {
+    line-height: 50px;
+    text-align: center;
+    color: #666;
+}
+
+section.problem_reporter {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    width: 400px;
+    background: #F3F3F3;
+    z-index: 9999;
+    margin-top: -126px;
+    margin-left: -201px;
+    border: 1px solid #CCC;
+    color: #666;
+}
+
+section.problem_reporter h2 {
+    color: #666;
+    margin: 15px;
+    margin-bottom: 10px;
+}
+
+section.problem_reporter span {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+section.problem_reporter textarea {
+    margin: 0px 0px 0px 20px !important;
+    height: 156px !important;
+    width: 355px !important;
+    resize: none;
+}
+
+section.problem_reporter a {
+    color: white;
+    text-decoration: none;
+    float: right;
+    margin-right: 20px;
+    padding: 2px;
+    background: #333;
+}
+
+a.problem_xer {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 2px 4px !important;
+}

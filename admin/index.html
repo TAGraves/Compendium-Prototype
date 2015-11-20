@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Compendium Administration</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/reset.css" />		
+		<link rel="stylesheet" type="text/css" href="../stylesheets/admin.css" />
+		<script src="../js/jquery.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			google.load('visualization', '1', {packages: ['corechart']});
+		</script>
+	    <script type="text/javascript">
+	      	function drawVisualization() {
+	        // Create and populate the data table.
+		        var data = google.visualization.arrayToDataTable([
+		          ['x', ''],
+		          ['Aug',   .08],
+		          ['Sep',   .09],
+		          ['Oct',   .1],
+		          ['Nov',   .1],
+		          ['Dec',   .1],
+		          ['Jan',   .11],
+		          ['Feb',   .11],
+		          ['Mar',   .12],
+		          ['Apr',   .12],
+		          ['May',   .13],
+		        ]);
+	      
+	        // Create and draw the visualization.
+		        new google.visualization.LineChart(document.getElementById('billy_chart')).
+		            draw(data, {curveType: "function",
+		                        width: 550, height: 282,
+		                        vAxis: {maxValue: .15, minValue: 0},
+		                    	legend: {position:"none"},
+		                    	fontName: "Trebuchet MS",
+		                    	fontSize: "13"}
+		                );
+	     	}
+
+	     	google.setOnLoadCallback(drawVisualization);
+	    </script>
+
+	</head>
+	<body>
+		<div id="navigation_bar">
+				<a href="#" id="logo">Compendium</a>
+				<div class="navigation" id="first_navigation">
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_school_data">School Data</a>
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_class_data">Class Data</a>
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_individual_data">Individual Data</a>
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_connect">Connect</a>
+					<div class="navigation_border">|</div>
+				</div>
+				<div class="navigation" id="second_navigation">
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_notifications">notifications</a>
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_profile">my profile</a>
+					<div class="navigation_border">|</div>
+					<a href="#" id="navigation_logout">sign out</a>
+					<div class="navigation_border">|</div>
+
+				</div>
+		</div>
+		<div id="billy">
+			<div class="wrapper">
+				<div id="billy_inner">
+					<div id="billy_chart"></div>
+					<div id="billy_chart_detail">
+						<h1>Average Growth Per Month</h1>
+						<h2>Students at Columbus Bilingual are on track to gain <span class="important">1.2 levels per year.</span></h2>
+						<a href="#" class="detail_button">Get more details</a>
+					</div>
+				</div>
+				<div id="billy_controls">
+					<a href="#" class="left_arrow">left</a><a href="#" class="dot">.</a><a href="#" class="dot">.</a><a href="#" class="dot dot_active">.</a><a href="#" class="dot">.</a><a href="#" class="dot">.</a><a href="#" class="right_arrow">right</a>
+				</div>
+			</div>
+		</div>
+		<div id="detail_display">
+			<div class="wrapper">
+				<div id="detail_display_navigation">
+					<a class="dd_navigation_active" href="#" id="dd_navigation_news">News Feed</a>
+					<a href="#" id="dd_navigation_calendar">Calendar</a>
+					<a href="#" id="dd_navigation_quick">Quick Entry</a>
+				</div>
+				<div id="current_news">
+					<div id="archiver">
+						<span class="keep_up">Keep up with everything happening at <span class="school_abbreviation">CBA</span> and other schools like us.</span>
+						<a href="#" class="button">View News Archive</a>
+					</div>
+					<div class="news_story" id="news_story_1">
+						<img src="../images/admin/sample_news_img.png" alt="" />
+						<h3><span class="school_abbreviation">CBA</span> Launches Compendium</h3>
+						<h4>Columbus Bilingual Academy recently launched a new way to track progress.</h4>
+						<a href="#" class="read_story"><span class="arrows">&gt; &gt;</span> Read this story</a>
+					</div>
+					<div class="news_story" id="news_story_2">
+						<img src="../images/admin/sample_news_img.png" alt="" />
+						<h3><span class="school_abbreviation">CBA</span> Launches Compendium</h3>
+						<h4>Columbus Bilingual Academy recently launched a new way to track progress.</h4>
+						<a href="#" class="read_story"><span class="arrows">&gt; &gt;</span> Read this story</a>
+					</div>
+				</div>
+				<div id="dots_border"></div>
+				<div id="networking">
+					<div id="get_social">
+						<div id="facebook_che"><a href="#" id="facebook"><span class="follow">Follow Compendium</span> on <span class="facebook_img">facebook</span></a></div>
+						<div id="twitter_che"><a href="#" id="twitter"><span class="follow">Or @compendium</span> with <span class="twitter_img">twitter</span></a></div>
+					</div>
+					<div class="vertical_dots"></div>
+					<div id="newsletter">
+						<a href="#" class="button">Get the Newsletter</a>
+						<div>One of the best ways to keep up with CBA is by getting automatic email updates.</div>
+					</div>
+					<div class="vertical_dots"></div>
+					<div id="feedback">
+						<a href="#" class="button">How's the Website?</a>
+						<div>Is something too confusing? We want to know! Fill out the form and we'll see what we can do.</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

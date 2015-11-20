@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'bignoodletitlingregular';
+    src: url('big_noodle_titling-webfont.eot');
+    src: url('big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'),
+         url('big_noodle_titling-webfont.woff') format('woff'),
+         url('big_noodle_titling-webfont.ttf') format('truetype'),
+         url('big_noodle_titling-webfont.svg#bignoodletitlingregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.impact {
+    font-family: 'bignoodletitlingregular';
+}
+
+.page-break {
+    height:0; 
+    page-break-before:always; 
+    margin:0; 
+    border-top:none;
+}
+
+.page {
+    padding: .4in .55in;
+    width: 9.9in;
+    height: 7.7in;
+}
+
+.left {
+    float: left;
+    width: 3.78in;
+}
+
+.profile_pic {
+    width: 0in;
+    height: 0in;
+    border: 1.89in solid #999;
+    border-radius: .05in;
+}
+
+
+.profile_name {
+    width: 3.78in;
+    height: .74in;
+    border-bottom: .013in solid #333;
+}
+
+.profile_name span {
+    line-height: .74in;
+    vertical-align: middle;
+}
+
+.name {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #333;
+}
+
+.level {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #999;
+}
+
+.birthday {
+    margin-top: .3in !important;
+}
+
+.email, .phone, .address {
+    margin-top: .45in;
+}
+
+.outer {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    position: relative;
+    clip: auto;
+    overflow: hidden;
+    width: 3.78in;
+}
+
+.container {
+    position: relative;
+    text-align: right;
+    left: 1px;
+    white-space: nowrap;
+    margin-top: .45in;
+}
+
+.filler {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 2px dotted #333;
+    height: 75%;
+}
+
+.label {
+    background: white;
+    float: left;
+    margin-right: 20px;
+    padding-right: .1in;
+    position: relative;
+    font-size: 18pt;
+    color: #333;
+}
+
+.text {
+    background: white;
+    padding-left: .05in;
+    position: relative;
+    font-size: 14pt;
+    color: #666;
+}
+
+.last-contents {
+    margin-top: .1in;
+    font-size: 14pt;
+    color: #666;
+    text-align: right;
+}
+
+.right {
+    width: 5.65in;
+    height: 7.25in;
+    border: 1px solid #999;
+    float: right;
+    position: relative;
+    padding: .21in 0in 0in .15in;
+}
+
+.rightBackground {
+    border-left: 2.9in solid #f9f9f9;
+    border-right: 2.9in solid #f9f9f9;
+    border-top: 3.73in solid #f9f9f9;
+    border-bottom: 3.73in solid #f9f9f9;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.relative {
+    position: relative;
+    z-index: 1;
+}
+
+.title, .mission-head {
+    font-size: 30pt;
+    color: #666;
+}
+
+.title {
+    width: 100%;
+    border-bottom: 1px solid #999;
+    margin-bottom: .39in;
+}
+
+.subject {
+}
+
+.subject-name {
+    font-size: 18pt;
+    color: #666;
+}
+
+.gainer {
+    font-size: 12pt;
+    color: #333;
+    font-weight: bold;
+}
+
+.score {
+    font-size: 14pt;
+    color: #666;
+    font-weight: bold;
+    float: right;
+    margin-right: .1in;
+    line-height: 28px;
+}
+
+.darker {
+    color: #333 !important;
+}
+
+.mission-complete {
+    font-size: 12pt;
+    color: #666;
+    font-weight: bold;
+    clear: right;
+    margin: .2in 0in .275in .17in;
+}
+
+.academic {
+    margin-right: .325in;
+}
+
+.personal, .academic {
+    float: left;
+    width: 2.66in;
+    clear: none;
+}
+
+.missions {
+    clear: both;
+}
+
+.mission-head {
+    width: 100%;
+    border-bottom: 1px solid #999;
+    margin-bottom: .2in;
+}
+
+.topper {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #666;
+    margin-left: .27in;
+}
+
+.type {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #999;
+}
+
+.mission-desc, .mission-step {
+    font-size: 12pt;
+    color: #666;
+    margin-left: .68in;
+}
+
+.mission-step {
+    margin-bottom: .1in;
+}

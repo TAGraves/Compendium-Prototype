@@ -1,0 +1,182 @@
+div.wrap {
+	padding-top: 127px;
+	width: 915px;
+	margin: 0 auto;
+}
+
+section.main_pane a {
+	width: 271px;
+	height: 242px;
+	padding-top: 29px;
+	border: 2px solid #005985;
+	border-radius: 100%;
+	background-color: #006699;
+	float: left;
+	margin-left: 45px;
+}
+
+section.main_pane a.learning_plan {
+	margin-left: 0px !important;
+}
+
+section.folder {
+	height: 120px;
+	background: url(../images/folder_icon.png);
+	padding-top: 68px;
+	font-weight: bold;
+	font-size: 17px;
+	color: #fff;
+}
+
+a.learning_plan section.folder {
+	padding-left: 127px;
+	width: 149px;
+}
+
+a.my_goals section.folder {
+	padding-left: 175px;
+	width: 101px;
+}
+
+a.id_card section.card {
+	width: 254px;
+	height: 144px;
+	background: url(../images/badge_icon.png);
+	margin-top: 8px;
+	padding: 45px 0px 0px 18px;
+}
+
+section.card img {
+	width: 63px;
+	height: 90px;
+	border: 2px solid #ccc;
+	border-radius: 2px;
+	float: left;
+}
+
+section.card div.id_breakdown {
+	float: left;
+	margin-left: 9px;
+}
+
+div.id_breakdown section.name {
+	width: 154px;
+	border-bottom: 2px solid #666;
+}
+
+section.name header {
+	font-size: 7.42px;
+	color: #666;
+	font-weight: bold;
+}
+
+section.name span, section.overall_level span {
+	font-size: 19.8px;
+	color: #006699;
+	margin-bottom: 4px;
+}
+
+div.id_breakdown section.overall_level {
+	margin-top: 14px;
+	width: 154px;
+	border-bottom: 1px solid #666;
+	padding-bottom: 5px;
+}
+
+section.overall_level span {
+	vertical-align: top;
+	line-height: 17px;
+}
+
+section.overall_level div.meter {
+	width: 138px;
+	height: 17px;
+	background: url(../images/small_meter.png);
+	float: right;
+}
+
+section.overall_level div.meter_number {
+	width: 83px;
+	height: 17px;
+	background: url(../images/small_meter_full.png);
+}
+
+div.id_breakdown section.accomplishments {
+	width: 154px;
+	padding-top: 5px;
+}
+
+section.accomplishments header {
+	font-size: 7.42px;
+	color: #333;
+	font-weight: bold;
+}
+
+section.accomplishments ul {
+	width: 147px;
+	height: 34px;
+	background: #c8c8c8; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M4YzhjOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #c8c8c8 0%, #dbdbdb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c8c8c8), color-stop(100%,#dbdbdb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c8c8c8 0%,#dbdbdb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c8c8c8 0%,#dbdbdb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c8c8c8 0%,#dbdbdb 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #c8c8c8 0%,#dbdbdb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c8c8', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-8 */
+	border-radius: 3px;
+	border-top: 1px solid #616161;
+	border-left: 1px solid #616161;
+	border-bottom: 1px solid #ebebeb;
+	border-right: 1px solid #b5b5b5;
+	margin-top: 5px;
+}
+
+section.accomplishments ul li {
+	float: left;
+	width: 49px;
+	height: 15px;
+	text-align: center;
+	border-top: 1px solid #a4a4a4;
+}
+
+section.accomplishments ul li div.image {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 17px 17px;
+	height: 17px;
+}
+
+section.accomplishments ul li.academic div.image {
+	background-image: url(../images/icons/academic.png);
+}
+
+section.accomplishments ul li.personal div.image {
+	background-image: url(../images/icons/personal.png);
+}
+
+section.accomplishments ul li.interpersonal div.image {
+	background-image: url(../images/icons/interpersonal.png);
+}
+
+section.accomplishments ul li.attendance div.image {
+	background-image: url(../images/icons/attendance.png);
+}
+
+section.accomplishments ul li.paychecks div.image {
+	background-image: url(../images/icons/paychecks.png);
+}
+
+section.accomplishments ul li div {
+	font-size: 5.5px;
+	color: #666;
+	border-left: 1px solid #999;
+	width: 48px;
+}
+
+section.accomplishments ul li div strong {
+	font-size: 6.5px;
+	color: #006699;
+	font-weight: bold;
+}

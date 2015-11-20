@@ -1,0 +1,425 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#logo {
+	display: block;
+	text-indent: -9999px;
+}
+
+#navigation_bar {
+	background: url(http://mycompendium.net/images/site_images/navigation_bar_bg.png);
+	width: 100%;
+	height: 55px;
+}
+
+#logo {
+	width: 166px;
+	height: 29px;
+	background: url(http://mycompendium.net/images/site_images/logo.png) 0px 12px no-repeat;
+	margin-left: 30px;
+	padding: 12px 0px;
+	float: left;
+}
+
+#wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#descriptive {
+	width: 510px;
+	float: left;
+}
+
+#descriptive h1 {
+	color: #339933;
+	font-size: 26px;
+	margin-top: 27px;
+}
+
+#descriptive h2 {
+	color: #666666;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+#descriptive div h2, #descriptive div h5 {
+	position: relative;
+	left: 75px;
+}
+
+#descriptive h3 {
+	color: #336699;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+#descriptive h4 {
+	color: #666666;
+	font-size: 18px;
+	margin-bottom: 27px;
+}
+
+#descriptive h5 {
+	color: #666666;
+	font-size: 13px;
+}
+
+#descriptive div {
+	position: relative;
+}
+
+#descriptive div div {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.academic_dev div {
+	background: url(http://mycompendium.net/images/site_images/academic_progress.png) no-repeat;
+	width: 50px;
+	height: 50px;
+}
+
+.interpersonal div {
+	background: url(http://mycompendium.net/images/site_images/interpersonal_skills.png) no-repeat;
+	width: 50px;
+	height: 41px;
+}
+
+.personal div {
+	background: url(http://mycompendium.net/images/site_images/personal_skills.png) no-repeat;
+	width: 50px;
+	height: 46px;
+}
+
+.paychecks div {
+	background: url(http://mycompendium.net/images/site_images/paychecks.png) no-repeat;
+	width: 50px;
+	height: 40px;
+}
+
+.attendance div {
+	background: url(http://mycompendium.net/images/site_images/attendance.png) no-repeat;
+	width: 50px;
+	height: 44px;
+}
+
+#want_compendium {
+	display: block;
+	text-decoration: none;
+	margin-top: 27px;
+	border: 1px solid #e0e0e0;
+	height: 79px;
+	background: url({site_url}/images/login/mangen.png) 11px 0px no-repeat;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 20px 0px 0px 100px;
+	width: 410px;
+}
+
+#action {
+	width: 403px;
+	float: right;
+}
+
+#detail_display_navigation {
+	overflow: visible;
+	margin-top: 23px;
+}
+
+#detail_display_navigation a {
+	display: block;
+	float: left;	
+	width: 201px;
+	height: 40px;
+	background: url(http://mycompendium.net/images/site_images/tabs.png);
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#detail_display_navigation a:hover {
+	text-decoration: underline;
+}
+
+.dd_navigation_active:hover {
+	text-decoration: none !important;
+}
+
+.dd_navigation_active {
+	background-position: 0px -80px !important;
+	z-index: 1001 !important;
+}
+
+#dd_navigation_login {
+	position: relative;
+	left: 7.5px;
+	z-index: 1000;
+}
+
+#dd_navigation_register {
+	position: relative;
+	right: 7.5px;
+	z-index: 1000;
+}
+
+#folder {
+	width: 320px;
+	height: 238px;
+	background: url({site_url}/images/login/folder_1.png) no-repeat;
+	clear: left;
+	z-index: 2000;
+	position: relative;
+	top: -2px;
+	padding: 42px; 
+}
+
+.item {
+	width: 320px;
+}
+
+#scrollable {
+	position: relative;
+	overflow: hidden;
+	width: 320px;
+	height: 481px;
+}
+
+#scrollable .items {
+	width:20000px;
+	position:absolute;
+}
+
+.items .item {
+  float:left;
+}
+
+#folder h2 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.remember-label, .rightCode-label, .tos-label, .receiveUpdates-label {
+	font-size: 14px !important;
+	color: #666 !important;
+	margin-left: 15px;
+	vertical-align: middle;
+	font-family: Tahoma, Geneva, sans-serif !important;
+}
+
+.explanation {
+	font-size: 14px !important;
+	color: #999999 !important;
+	font-family: Tahoma, Geneva, sans-serif !important;
+	position: relative;
+	top: 15px;
+}
+
+.confirmation-div {
+	position: relative;
+	top: 30px;
+	margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	height: 32px;
+	font-size: 15px;
+	direction: ltr;
+	display: inline-block;
+	margin: 9px 0px 21px 0px;
+	padding: 0 8px;
+	background: white;
+	border: 1px solid #D9D9D9;
+	border-top: 1px solid silver;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+	border: 1px solid #b9b9b9;
+	border-top: 1px solid #a0a0a0;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+	outline: none;
+	border: 1px solid #66cc66;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+}
+
+input[type="submit"] {
+	margin: 0 1.5em 1.2em 0;
+	height: 35px;
+	font-size: 14px;
+	line-height: 35px;
+	border: 1px solid #006699;
+	color: white;
+	background-color: #3399cc;
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	font-weight: bold;
+	padding: 0 8px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	margin: 0;
+	cursor: pointer;
+	background: white;
+	border: 1px solid gainsboro;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	vertical-align: middle;
+}
+
+input[type=checkbox]:active {
+	border-color: #c6c6c6;
+	background: #ebebeb;
+}
+
+input[type=checkbox]:hover {
+	border-color: #c6c6c6;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+}
+
+input[type=checkbox]:checked::after {
+	content: url({site_url}/images/login/checkmark.png);
+	display: block;
+	position: absolute;
+	top: -6px;
+	left: -2px;
+}
+
+input[type=checkbox]:checked {
+ 	background: #fff;
+}
+
+.login_problems {
+	color: #369;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif !important;
+}
+
+.login_problems:hover {
+	color: #39C;
+}
+
+#folder h1 {
+	color: #3399cc;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.progress {
+	position: relative;
+	margin: 8px 0px 15px 0px;
+}
+
+.progressbar {
+	float: left;
+	width: 100px;
+	height: 7px;
+	background: #cccccc;
+	margin-right: 9px;
+}
+
+.progressbar_last {
+	margin-right: 0px;
+}
+
+.progressbar_active {
+	background: #3399cc;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.progress_2 {
+	left: 109px !important;
+}
+
+.progress_3 {
+	left: 218px !important;
+}
+
+.name-div, .username2-div {
+	position: relative;
+	top: 15px;
+}
+
+.nextStep {
+	float: right !important;
+	height: 25px !important;
+	font-size: 13px !important;
+	line-height: 23px !important;
+	width: 75px !important;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.emphasis {
+	font-weight: bold;
+}
+
+.whereCode {
+}
+
+.newstuff {
+	background: url({site_url}/images/login/folder_2.png) no-repeat !important;
+}
+
+#footer {
+	background: url({site_url}/images/login/folder_2.png);
+	visibility: hidden;
+}
+
+label.special {
+	display: block;
+}
+
+input.special {
+}
+
+input[type='submit'].special {
+	margin-top: 20px;
+}
+
+#register_2 {
+	overflow: hidden;
+}
+
+.errors {
+	font-size: 14px;
+	font-weight: bold;
+	color: red;
+}

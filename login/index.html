@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compendium Login</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="{stylesheets}/reset.css" />        
+        <link rel="stylesheet" type="text/css" href="{stylesheets}/global.css" />     
+        <link rel="stylesheet" type="text/css" href="{stylesheets}/login.css" />
+        <script src="{javascript}/jquery.js"></script>      
+        <script src="{javascript}/ui.jquery.js"></script>
+        <script src="{javascript}/tools.jquery.js"></script>
+        <script src="{javascript}/login.js"></script>
+    </head>
+    <body>
+        <header class="masthead">
+            <a class="a_image logo" href="#">Compendium</a>
+        </header>
+        <div id="wrap">
+            <div id="descriptive">
+                <h1>Compendium</h1>
+                <h4>The new standard in education</h4>
+                <h5 class="definition">A compendium, by definition, is a concise, yet comprehensive compilation of a body of knowledge. Your Compendium profile does just that. It is a compilation of your:</h6>
+                <div class="academic_dev">
+                    <h2>Academic Development</h2>
+                    <h5>Never wonder how you did on the last test again.</h5>
+                    <div>&nbsp;</div>
+                </div>
+                <div class="interpersonal">
+                    <h2>Interpersonal Relationships</h2>
+                    <h5>Keep track of how well you communicate and relate with others.</h5>
+                    <div>&nbsp;</div>
+                </div>
+                <div class="personal">
+                    <h2>Personal Skills</h2>
+                    <h5>Are you a natural leader? Are you motivated and creative? Find out.</h5>
+                    <div>&nbsp;</div>
+                </div>
+                <div class="paychecks">
+                    <h2>Paychecks</h2>
+                    <h5>See what rewards you're on track to get at the end of the year.</h5>
+                    <div>&nbsp;</div>
+                </div>
+                <div class="attendance">
+                    <h2>Attendance</h2>
+                    <h5>Track how many days you've attended school.</h5>
+                    <div>&nbsp;</div>
+                </div>
+                <a href="#" id="want_compendium">
+                    <h3>Want Compendium at your school?</h3>
+                    <h5>We'd love to hear from you! Click here to find out more about how your school can utiltize Compendium.</h5>
+                </a>
+            </div>
+            <div id="action">
+                <div id="detail_display_navigation">
+                    <a class="dd_navigation_active" style="color: #000;" href="#" id="dd_navigation_login">Sign In</a>
+                    <a href="#" style="color: #000;" id="dd_navigation_register">Sign Up</a>
+                </div>
+                <div id="folder">
+                    <div id="scrollable">
+                    <div class="items">
+                    <div class="item" id="sign_in">
+                        {exp:user:register form:id="sign_in_form" override_return="student/index" return="student/index" require_key="yes"}
+                            <div class="errors"></div>
+                            <div class="username-div">
+                                <label for="username"><h2 class="username-label">Username</h2></label>
+                                <input type="text" spellcheck="false" name="username" id="Username" value="">
+                            </div>
+                            <div class="passwd-div">
+                                <label for="password"><h2 class="passwd-label">Password</h2></label>
+                                <input type="password" name="password" id="Passwd">
+                            </div>
+                            <input type="submit" class="submit-button" name="signIn" id="signIn" value="Sign in">
+                            <label class="remember" onclick="">
+                            <input type="checkbox" name="auto_login" id="PersistentCookie" value="1">
+                                <span class="remember-label">Remember me</span>
+                            </label>
+
+                        {/exp:user:register}
+                        <a href="#" class="login_problems">Having problems logging in?</a>
+                    </div>
+                    <div class="item" id="register_1">
+                        <h1>Registration Code</h1>
+                        <div class="progress">
+                            <div class="progressbar"></div>
+                            <div class="progressbar"></div>
+                            <div class="progressbar progressbar_last"></div>
+                            <div class="progressbar progressbar_active"></div>
+                        </div>
+                        <div style="position: relative; top: 5px;" class="errors"></div>
+                        <div class="name-div">
+                            <label for="name"><h2 class="name-label">Your Name</h2></label>
+                            <input type="text" spellcheck="false" name="Name" id="Name" value="">
+                        </div>
+                        <div class="registration-div">
+                            <label for="Registration"><h2 class="registration-label">Registration Code</h2></label>
+                            <input type="text" maxlength="9" name="Registration" id="Registration">
+                        </div>
+                        <input type="submit" class="submit-button nextStep spec1" name="nextStep" value="Next Step">
+                        <a href="#" class="login_problems whereCode">Where's my registration code??</a>
+                    </div>
+                    <div class="item" id="register_2">
+                        <h1>Your Information</h1>
+                        <div class="progress">
+                            <div class="progressbar"></div>
+                            <div class="progressbar"></div>
+                            <div class="progressbar progressbar_last"></div>
+                            <div class="progressbar progressbar_active progress_2"></div>
+                        </div>
+                        {exp:user:register error_page="login/error" form:id="publishForm" require_key="yes" }
+                        <div style="position: relative; top: 5px;" class="errors"></div>
+                        <div style="position: relative; top: 5px;" class="username-div">
+                            <label for="username"><h2 class="username-label">Pick a Username</h2></label>
+                            <input type="text" spellcheck="false" name="username" id="usernamePick" value="">
+                        </div>
+                        <input type="hidden" name="first_name" value="" >
+                        <input type="hidden" name="key" value="" >
+                        <div class="passwd-div">
+                            <label for="Passwd1"><h2 class="passwd-label">Make a Password</h2></label>
+                            <input type="password" name="password" id="Passwd1">
+                        </div>
+                        <div class="passwd-div">
+                            <label for="Passwd2"><h2 class="passwd-label">Confirm Your Password</h2></label>
+                            <input type="password" name="password_confirm" id="Passwd2">
+                        </div>
+                        <div class="email-div">
+                            <label for="email"><h2 class="email-label">What's your email address?</h2></label>
+                            <input type="text" spellcheck="false" name="email" id="email" value="">
+                        </div>
+                        <label class="remember" onclick="">
+                        <input type="checkbox" name="receive_email_updates" id="receieveUpdates" value="yes">
+                            <span class="receiveUpdates-label">I want to <a href="#" class="login_problems learnMore">receive updates about myself.</a></span>
+                        </label>
+                        <label class="remember special" onclick="">
+                        <input type="checkbox" name="accept_terms" id="tos" value="y">
+                            <span class="tos-label">I know <a href="#" class="login_problems tos">what I can use this website for.</a></span>
+                        </label>
+
+                        <input type="submit" class="submit-button nextStep special" name="nextStep" value="Next Step">
+                        {/exp:user:register}
+                    </div>
+
+                    <div class="item" id="register_3">
+                        <h1>Almost Done!</h1>
+                        <div class="progress">
+                            <div class="progressbar"></div>
+                            <div class="progressbar"></div>
+                            <div class="progressbar progressbar_last"></div>
+                            <div class="progressbar progressbar_active progress_3"></div>
+                        </div>
+                        <div class="errors"></div>
+                        <div class="explanation">We sent you an email with a confirmation code. When you get the email, copy the code and paste it below, and you'll be ready to use Compendium!</div>
+                        <div class="confirmation-div">
+                            <label for="Confrimation"><h2 class="confirmation-label">Confirmation Code</h2></label>
+                            <input type="text" name="Confirmation" id="Confirmation">
+                        </div>
+                        <input type="submit" class="submit-button nextStep finish" name="nextStep" value="Finish">
+                        <a href="#" class="login_problems whereCode">Resend Code</a>
+                    </div>
+
+                    <div class="item" id="forgot_password">
+                        <?php
+                            $this->EE =& get_instance();
+                            $action_id = $this->EE->functions->fetch_action_id('Member', 'retrieve_password');
+                        ?> 
+                        <form id="forgot_password_form" method="post" action="{site_url}">
+                            <div class='hiddenFields'>
+                                <input type="hidden" name="ACT" value="<?php echo $action_id; //or you could hard code this action id ?>" />
+                                <input type="hidden" name="XID" value={XID_HASH} />
+                                <input type="hidden" name="RET" value="-3" /><!-- URL you would like the user to be redirected to -->
+                                <input type="hidden" name="FROM" value="" />
+                                <input type="hidden" name="site_id" value="1" />
+                            </div>
+                            <div class="email-div">
+                                <label for="email"><h2 class="email-label">Email Address</h2></label>
+                                <input type="text" spellcheck="false" name="email" id="email" value="">
+                            </div>
+                            <input type="submit" id="submit" name="submit" value="Submit" />
+                        </form> 
+                    </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

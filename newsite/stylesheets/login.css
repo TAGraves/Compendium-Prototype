@@ -1,0 +1,303 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: url(../images/site_images/login/page_background.png) #086ba4;
+    height: 100%;
+}
+
+div.container {
+    margin: 0 auto;
+    width: 406px;
+}
+
+div.logo {
+    position: absolute;
+    top: 50%;
+    height: 67px;
+    margin: -285.5px auto 0 auto;    
+    background: url(../images/site_images/login/logo.png) no-repeat;
+    width: 406px;
+}
+
+section.content {
+    width: 404px;
+    height: 361px;
+    position: absolute;
+    top: 50%;
+    margin: -180.5px auto 0 auto;
+    z-index: 2;
+}
+
+section.tabs {
+    margin-left: 10px;
+}
+
+a.tab {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    float: left;
+    width: 201px;
+    height: 40px;
+    background: url(../images/site_images/login/tabs.png);
+    z-index: 1;
+}
+
+a.active_tab {
+    background-position: 0px -80px;
+    z-index: 2;
+}
+
+a.tab:hover {
+    background-position: 0px -80px;
+}
+
+a.sign_up {
+    margin-left: -17px;
+}
+
+a.tab span {
+    display: block;
+    line-height: 40px;
+    vertical-align: middle;
+    width: 201px;
+    text-align: center;
+}
+
+section.box {
+    width: 404px;
+    height: 322px;
+    background: url(../images/site_images/login/box_background.png);
+    clear: left;
+    position: relative;
+    top: -1px;
+    z-index: 5;
+}
+
+section.box_option {
+    width: 318px;
+    margin: 0 auto;
+}
+
+section.login {
+    padding-top: 65px;
+}
+
+section.register_1 {
+    padding-top: 50px;
+    display: none;
+}
+
+section.register_2 {
+    padding-top: 38px;
+    display: none; 
+}
+
+section.box_option header span {
+    font-weight: bold;
+    font-size: 17px;
+    color: #3399cc;
+}
+
+section.box_option header div {
+    width: 316px;
+    height: 18px;
+    background: url(../images/site_images/login/progress.png);
+    margin-top: 15px;
+}
+
+div.progress_2 {
+    background: url(../images/site_images/login/progress_full.png) !important;
+}
+
+section.registration_code {
+    margin-top: 29px;
+}
+
+section.pick_username {
+    margin-top: 23px;
+}
+
+section.code_confirm {
+    height: 17px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+div.code_box {
+    width: 21px;
+    height: 21px;
+    float: left;
+    position: relative;
+}
+
+div.unchecker {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 1px solid #999;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+section.code_confirm div.checkmark {
+    width: 21px;
+    height: 21px;
+    background: url(../images/site_images/login/checkmark.png);
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    z-index: 2;
+    display: none;
+}
+
+div.checked {
+    display: block !important;
+}
+
+span.my_code {
+    margin-left: 11px;
+    line-height: 21px;
+    vertical-align: middle;
+}
+
+span.important {
+    font-weight: bold;
+}
+
+section.pick_password_1, section.pick_password_2 {
+    width: 149px !important;
+    float: left;
+    margin-top: 14px;
+    margin-bottom: 17px;
+}
+
+section.pick_password_2 {
+    margin-left: 18px;   
+}
+
+section.pick_password_1 input, section.pick_password_2 input {
+    width: 131px !important;
+}
+
+div.text {
+    width: 100%;
+    height: 17px;
+    position: relative;
+}
+
+div.text span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div.text a {
+    font-size: 12px;
+    color: #4189c8;
+    text-decoration: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+div.text a:hover {
+    text-decoration: underline;
+}
+
+section.box_option input {
+    margin-top: 3px;
+    width: 300px;
+    height: 35px;
+    border: 0px none;
+    outline: 0px none;
+    padding: 0px 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+section.box_option input:hover {
+    border: 1px solid #b9b9b9;
+    outline: 0px none;    
+}
+
+section.box_option input:focus {
+    border: 1px solid #66cc66;
+    outline: 0px none;
+    -moz-box-shadow: inset 1px 1px 5px -1px #888;
+    -webkit-box-shadow: inset 1px 1px 5px -1px #888;
+    box-shadow: inset 1px 1px 5px -1px #888;
+}
+
+section.password {
+    margin-top: 22px;
+}
+
+section.submit a {
+    clear: left;
+    display: block;
+    width: 71px;
+    height: 33px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #0f5c91;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 0px #849cb4;
+    background: #2699d0; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI2OTlkMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwYjZlYTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #2699d0 0%, #0b6ea1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2699d0), color-stop(100%,#0b6ea1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #2699d0 0%,#0b6ea1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #2699d0 0%,#0b6ea1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #2699d0 0%,#0b6ea1 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #2699d0 0%,#0b6ea1 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2699d0', endColorstr='#0b6ea1',GradientType=0 ); /* IE6-8 */
+}
+
+section.submit a span {
+    line-height: 33px;
+    vertical-align: middle;
+}
+
+span.serror {
+    font-size: 12px;
+    color: red;
+}
+
+input.error, div.error {
+    border-color: red !important;
+}
+
+
+div.footer {
+    background: #0a6d9f; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyODliYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzBhNmQ5ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwYTZkOWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #228abb 0%, #0a6d9f 220px, #0a6d9f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#228abb), color-stop(220px,#0a6d9f), color-stop(100%,#0a6d9f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #228abb 0%,#0a6d9f 220px,#0a6d9f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #228abb 0%,#0a6d9f 220px,#0a6d9f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #228abb 0%,#0a6d9f 220px,#0a6d9f 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #228abb 0%,#0a6d9f 220px,#0a6d9f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#228abb', endColorstr='#0a6d9f',GradientType=0 ); /* IE6-8 */
+    height: 62%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    -moz-box-shadow: -5px -5px 5px #888;
+    -webkit-box-shadow: -5px -5px 5px #888;
+    box-shadow: 1px 0px 40px -5px #000;
+}

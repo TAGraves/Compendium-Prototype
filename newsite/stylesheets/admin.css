@@ -1,0 +1,172 @@
+body, html {
+	background: #fff;
+	height: 100%;
+}
+
+a.logo {
+	float: left;
+}
+
+nav.page_navigation {
+	float: left;
+	margin-left: 22px;
+}
+
+nav.social_navigation {
+	float: right;
+	margin-right: 31px;
+}
+
+nav a.navigation_item {
+	display: block;
+	height: 55px;
+	padding: 0px 20px;
+	float: left;
+	font-size: 14px;
+	color: #3399cc;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.bad {
+	text-decoration: line-through !important;
+}
+
+a.bad:hover {
+	color: #3399cc !important;
+}
+
+nav.social_navigation a.navigation_item {
+	color: #fff !important; 
+}
+
+nav.page_navigation a.active, nav.social_navigation a.active {
+	background: #006699 !important;
+	color: #fff !important;
+}
+
+nav.page_navigation a.active:hover {
+	color: #fff !important;
+}
+
+nav.page_navigation a.navigation_item:hover, nav.social_navigation a.navigation_item:hover {
+	color: #fff;
+}
+
+nav a.navigation_item span {
+	line-height: 55px;
+	vertical-align: baseline;
+}
+
+nav div.navigation_border {
+	float: left;
+	text-indent: -9999px;
+	height: 55px;
+	width: 1px;
+	border-left: 1px solid #006699;
+	border-right: 1px solid #006699;
+}
+
+a.schoolpicker {
+	padding: 0px 10px !important;
+	width: 60px;
+	background: url(../images/site_images/admin/menu_dropper.png) no-repeat 52px 19px #006699 !important;
+}
+
+section.school_selection {
+	height: 206px;
+	width: 100%;
+	background: #006699;
+	clear: both;
+	position: relative;
+	z-index: 999;
+	display: none;
+}
+
+.school_selection div {
+	width: 1124px;
+	margin: 0 auto;
+}
+
+.school_selection div a {
+	display: block;
+	float: left;
+	text-indent: -9999px;
+	height: 180px;
+	width: 180px;
+	border-radius: 100%;
+	background: #003366;
+	margin-right: 54px;
+	margin-top: 11px;
+}
+
+.school_selection div a:hover {
+	background: #3399cc !important;
+}
+
+a.impact {
+	margin-right: 0px !important;
+}
+
+.school_selection div a:before {
+	display: block;
+	content: "";
+	width: 168px;
+	height: 168px;
+	border-radius: 100%;
+	margin: 6px 6px 0px 6px;
+}
+
+a.gre:before {
+	background: url(../images/site_images/admin/schools/gre.png) no-repeat center center #fff;
+}
+
+a.csr:before {
+	background: url(../images/site_images/admin/schools/csr.png) no-repeat center center #fff;
+}
+
+a.cba:before {
+	background: url(../images/site_images/admin/schools/cba.png) no-repeat center center #fff;
+}
+
+a.cban:before {
+	background: url(../images/site_images/admin/schools/cban.png) no-repeat center center #fff;
+}
+
+a.impact:before {
+	background: url(../images/site_images/admin/schools/impact.png) no-repeat center center #fff;
+}
+
+.school_selection div a:before {
+	background-size: 75%;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	.school_selection div a {
+		height: 150px !important;
+		width: 150px !important;
+		margin-right: 50px;
+		margin-top: 10px !important;
+	}
+
+	.school_selection div {
+		width: 950px !important;
+		margin: 0 auto !important;
+	}
+
+	section.school_selection {
+		height: 170px !important;
+	}
+
+	a.impact {
+		margin-right: 0px !important;
+	}
+
+	.school_selection div a:before {
+		width: 140px !important;
+		height: 140px !important;
+		margin: 5px 5px 0px 5px !important;
+	}
+}

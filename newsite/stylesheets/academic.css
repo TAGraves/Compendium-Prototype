@@ -1,0 +1,119 @@
+table th {
+	font-size: 12px;
+	color: #333;
+}
+
+th.add_subtract {
+	width: 230px;
+}
+
+td.add_subtract {
+	width: 230px;
+}
+
+table td.notes div.textarea_container {
+    height: 150px;
+    width: 329px;
+    position: absolute;
+    z-index: 2;
+    margin-top: -13px;
+    margin-left: -200px;
+    border: 1px solid #999;
+    -moz-box-shadow: 0px 0px 6px #888;
+    -webkit-box-shadow: 0px 0px 6px #888;
+    box-shadow: 0px 0px 6px #888;
+    display: none;
+    background: #F3F3F3;
+}
+
+table td.notes div.textarea_container textarea {
+    height: 95px;
+    width: 309px;
+    background: white;
+    border: 0px none;
+    outline: 0px;
+    font-size: 14px;
+    color: black;
+    padding: 17px 0px 0px 20px;
+    resize: none;
+    -webkit-appearance: none;
+    position: absolute;
+    z-index: 10;
+}
+
+div.textarea_container div {
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+}
+
+table td.notes span.no_notes {
+    visibility: hidden;
+}
+
+table td.notes span.has_notes {
+    visibility: visible;
+    margin-left: 15px;
+}
+
+td.add_subtract {
+	padding: 0px !important;
+}
+
+td.add_subtract span {
+	font-size: 18px;
+	font-weight: bold;
+	color: #009900;
+	line-height: 37px;
+	vertical-align: middle;
+	position: relative;
+}
+
+td.add_subtract span.plus_minus {
+	top: -1px;
+	padding-left: 10px;
+}
+
+td.add_subtract span.value {
+	font-size: 26px !important;
+}
+
+td.add_subtract span.negative {
+	color: #ff3333;
+}
+
+td.add_subtract div.slider {
+    width: 173px;
+    height: 6px;
+    background: #939393;
+    border-radius: 0px;
+    border: 0px none;
+    margin-top: 15px;
+    margin-left: 11px;
+    float: left;
+}
+
+div.slider div.ui-slider-range {
+    border: 0px none;
+    background: #009900;
+    height: 100%;
+}
+
+div.slider div.range-negative {
+	background: #ff3333;
+}
+
+div.slider a.ui-slider-handle {
+    display: block;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    border: 0px none;
+    background: #e4e4e4;
+    position: relative;
+    outline: 0px none;
+    cursor: default;
+    margin-left: -9px;
+    margin-top: -12px;
+    box-shadow: 2px 2px 7px -1px #888;
+}

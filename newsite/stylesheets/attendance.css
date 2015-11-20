@@ -1,0 +1,70 @@
+table td.present {
+    background: url(../images/site_images/admin/attendance.png) no-repeat 0px 0px;
+}
+
+table td.tardy {
+    background: url(../images/site_images/admin/attendance.png) no-repeat 0px -35px;
+}
+
+table td.absent {
+    background: url(../images/site_images/admin/attendance.png) no-repeat 0px -70px;
+}
+
+th.monday, th.tuesday, th.wednesday, th.thursday, th.friday {
+	width: 70px;
+}
+
+table td {
+	padding: 0px;
+}
+
+td.monday, td.tuesday, td.wednesday, td.thursday, td.friday {
+	width: 70px;
+	padding:0px;
+	height: 35px;
+}
+
+table td.notes div.textarea_container {
+    height: 150px;
+    width: 329px;
+    position: absolute;
+    z-index: 2;
+    margin-top: -13px;
+    margin-left: -200px;
+    border: 1px solid #999;
+    -moz-box-shadow: 0px 0px 6px #888;
+    -webkit-box-shadow: 0px 0px 6px #888;
+    box-shadow: 0px 0px 6px #888;
+    display: none;
+    background: #F3F3F3;
+}
+
+table td.notes div.textarea_container textarea {
+    height: 95px;
+    width: 309px;
+    background: white;
+    border: 0px none;
+    outline: 0px;
+    font-size: 14px;
+    color: black;
+    padding: 17px 0px 0px 20px;
+    resize: none;
+    -webkit-appearance: none;
+    position: absolute;
+    z-index: 10;
+}
+
+div.textarea_container div {
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+}
+
+table td.notes span.no_notes {
+    visibility: hidden;
+}
+
+table td.notes span.has_notes {
+    visibility: visible;
+    margin-left: 15px;
+}
